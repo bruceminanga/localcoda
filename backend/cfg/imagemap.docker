@@ -3,3 +3,4 @@ ubuntu spinto/localcoda-docker-ubuntu:latest ubuntu 0 0
 ubuntu-4GB spinto/localcoda-docker-ubuntu:latest ubuntu 0 0
 kubernetes-kubeadm-1node spinto/localcoda-docker-k3s:latest controlplane 0 0
 kubernetes-kubeadm-1node-4GB spinto/localcoda-docker-k3s:latest controlplane 0 0
+kubernetes-kubeadm-2nodes spinto/localcoda-docker-k3s:latest controlplane 0 0
