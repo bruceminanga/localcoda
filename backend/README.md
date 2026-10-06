@@ -1,5 +1,33 @@
-This folder contains the localcoda backend application.
+# CKA Local Runner (Localcoda)
 
-This application is in charge of starting the tutorial scenarios and displaying to the users a webshell with the tutorial text.
+A fast, zero-latency local setup to practice CKA scenarios on Linux without web UI lag or timeouts.
 
-Although designed to work with a frontend, it can be started standalone for execution of a single scenario.
+## Prerequisites
+
+* Fedora / Ubuntu / Arch with Docker installed
+* `jq` installed (`sudo dnf install -y jq`)
+* Docker permissions for current user (`sudo usermod -aG docker $USER`)
+
+## Quickstart
+
+1. **Clone this repository:**
+
+   ```bash
+   git clone <your-repo-url> localcoda
+   cd localcoda
+   ```
+
+2. Clone the scenario course into `scenarios/`:
+
+   ```bash
+   mkdir -p scenarios
+   git clone https://github.com/SachinHR/scenario-examples.git scenarios/sachin-cka
+   ```
+
+3. Launch the interactive menu:
+
+   ```bash
+   ./start-lab.sh
+   ```
+
+Select any lab number to start practicing on localhost.
